@@ -13,7 +13,7 @@ task:
     # Instructions:
     main_cache:
         folder: ~/an
-        null
+       
     update_install_script: apt update && apt install -y git-core python3 python jq gnupg make curl flex bison build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 libncurses5-dev lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
     repo_script: git config --global user.email "tukaiari@gmail.com" && git config --global user.name "Arijit Roy" && mkdir ~/bin && PATH=~/bin:$PATH && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo && mkdir ~/an
     repo_sync_script: cd ~/an && repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0 && repo sync
